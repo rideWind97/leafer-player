@@ -4,13 +4,16 @@
   "description": "A Leafer-based canvas video player component.",
   "license": "MIT",
   "author": "",
+  "keywords": [
+    "leafer-player"
+  ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/rideWind97/leafer-player.git"
   },
-  "homepage": "",
+  "homepage": "https://github.com/rideWind97/leafer-player#readme",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/rideWind97/leafer-player/issues"
   },
   "type": "module",
   "main": "./dist/index.cjs",
