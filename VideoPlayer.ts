@@ -769,7 +769,7 @@ export class VideoPlayer extends Box {
 
   private createControlPause(layout: Layout) {
     return new Box({
-      x: 35,
+      x: 10,
       y: layout.controlBtnY,
       width: layout.controlBtnSize,
       height: layout.controlBtnSize,
