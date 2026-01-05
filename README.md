@@ -48,6 +48,7 @@ const player = new VideoPlayer({
   }
 });
 
+![Preview](https://github.com/rideWind97/leafer-connector/blob/master/playground/assets/default.gif)
 // 伪代码：将 player 加入你的 Leafer 场景树（按你项目里实际的容器 API 来）
 // app.tree.add(player) / group.add(player) / box.add(player) ...
 ```
