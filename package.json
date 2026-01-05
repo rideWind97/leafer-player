@@ -1,5 +1,5 @@
 {
-  "name": "leafer-player",
+  "name": "leafer-canvas-player",
   "version": "0.1.0",
   "description": "A Leafer-based canvas video player component.",
   "license": "MIT",

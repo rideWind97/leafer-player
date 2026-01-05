@@ -1,4 +1,4 @@
-# leafer-player
+# leafer-canvas-player
 
 基于 `leafer-editor` 的 Canvas 视频播放器组件：用 `<video>` 作为“解码器 + 帧源”，每一帧绘制到 Leafer `Canvas` 上。这样视频就可以像普通 Leafer 节点一样被布局/缩放/裁切/叠加 UI。
 
@@ -12,7 +12,7 @@
 ## 安装
 
 ```bash
-npm i leafer-player
+npm i leafer-canvas-player
 ```
 
 本包依赖以下 **peerDependencies**（请在你的项目中自行安装）：
@@ -27,7 +27,7 @@ npm i leafer-player
 `VideoPlayer` 是 Leafer 的 `Box` 子类，你可以把它 `add` 到任意容器（如 App 的根节点 / Group / Box）中。
 
 ```ts
-import { VideoPlayer } from "leafer-player";
+import { VideoPlayer } from "leafer-canvas-player";
 
 const player = new VideoPlayer({
   // 必填
@@ -77,8 +77,8 @@ player.destroy();
 ### 导出
 
 ```ts
-import { VideoPlayer } from "leafer-player";
-import type { Config } from "leafer-player";
+import { VideoPlayer } from "leafer-canvas-player";
+import type { Config } from "leafer-canvas-player";
 ```
 
 ### `new VideoPlayer(config: Config)`
@@ -127,7 +127,7 @@ import type { Config } from "leafer-player";
 #### 参数示例（完整）
 
 ```ts
-import { VideoPlayer } from "leafer-player";
+import { VideoPlayer } from "leafer-canvas-player";
 
 const player = new VideoPlayer({
   width: 640,
