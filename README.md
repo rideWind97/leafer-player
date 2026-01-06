@@ -95,6 +95,7 @@ import type { Config } from "leafer-canvas-player";
 | `poster` | `string` | 否 | - | 封面图 URL。传了会作为初始画面（Canvas fill image）；不传则会在 metadata 就绪后尝试渲染一帧作为封面。 |
 | `resizeMode` | `"cover" \| "contain"` | 否 | `"contain"` | 封面图（`poster`）的适配模式：`cover`=裁切铺满，`contain`=完整显示（letterbox）。 |
 | `controlsVisible` | `boolean` | 否 | `true` | 底部控制条总开关：关闭后会隐藏**进度条 / 时间 / 下载 / 全屏 / 底部播放暂停**（中心按钮仍由内部状态机控制）。 |
+| `downloadVisible` | `boolean` | 否 | `true` | “下载”按钮（右上角 Download HD）是否显示/可点击。注意：仍会受 `controlsVisible=false` 的总开关影响。 |
 | `progressbarHeight` | `number` | 否 | `10` | 兼容旧 API：进度条高度（仅在未提供 `progressbar.height` 时生效）。 |
 | `progressbar` | `object` | 否 | - | 进度条高级配置，见下表。 |
 | `onPlay` | `() => void` | 否 | - | 视频进入播放态时触发（`video` 的 `play` 事件）。 |

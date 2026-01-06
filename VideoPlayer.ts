@@ -25,6 +25,8 @@ export class VideoPlayer extends Box {
   private resizeMode: NonNullable<Config["resizeMode"]>;
   /** 底部控制条整体开关 */
   private controlsVisible: boolean;
+  /** Top-right download button switch */
+  private downloadVisible: boolean;
   private progressbarHeight: number;
   private progressbarOptions: Required<NonNullable<Config["progressbar"]>>;
   private callbacks: Callbacks;
@@ -75,6 +77,7 @@ export class VideoPlayer extends Box {
       src,
       poster,
       controlsVisible = true,
+      downloadVisible = true,
       progressbarHeight = 10,
       progressbar,
       resizeMode = "contain",
@@ -97,6 +100,7 @@ export class VideoPlayer extends Box {
     this.src = src;
     this.poster = poster;
     this.controlsVisible = controlsVisible;
+    this.downloadVisible = downloadVisible;
     this.progressbarOptions = {
       left: progressbar?.left ?? 45,
       right: progressbar?.right ?? 50,
@@ -541,7 +545,8 @@ export class VideoPlayer extends Box {
 
     // time text is display-only (non-interactive)
     this.setVisibleWithHittable(this.timeTextEl, on, false);
-    this.setVisibleWithHittable(this.controlDownloadEl, on, on);
+    const downloadOn = on && this.downloadVisible;
+    this.setVisibleWithHittable(this.controlDownloadEl, downloadOn, downloadOn);
     this.setVisibleWithHittable(this.controlFullScreenEl, on, on);
 
     // bottom play/pause buttons are controlled by status machine, but must be hidden when master switch is off.

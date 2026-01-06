@@ -11,6 +11,12 @@ export type Config = Omit<IBoxInputData, "width" | "height"> & {
   poster?: string;
   resizeMode?: "cover" | "contain";
   /**
+   * Download button visibility (top-right "Download HD").
+   * - Default: true
+   * - Note: still affected by `controlsVisible` master switch.
+   */
+  downloadVisible?: boolean;
+  /**
    * Bottom control bar master switch.
    * - When false: hide ALL bottom controls (progress bar / time / download / fullscreen / bottom play-pause)
    * - Default: true
