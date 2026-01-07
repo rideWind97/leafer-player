@@ -72,6 +72,12 @@ player.setControlsVisible(false);
 player.destroy();
 ```
 
+---
+
+## 支持项目
+
+如果这个项目对你有帮助，欢迎在 GitHub 上点个 **Star** 支持一下，让我知道它值得继续维护与完善 🙂
+
 ## API
 
 ### 导出
@@ -231,5 +237,16 @@ npm publish
 ## License
 
 MIT
+
+---
+
+## 欢迎issues
+
+欢迎提交 Issue（Bug/需求/文档改进都可以）。为了更快定位问题，建议在 Issue 中附上：
+
+- 复现步骤（最好有最小可复现示例）
+- 预期行为 vs 实际行为
+- 运行环境（浏览器/版本、操作系统、`leafer-editor` 版本）
+- 相关截图/录屏/报错堆栈
 
 
